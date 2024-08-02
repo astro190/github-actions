@@ -27,8 +27,8 @@ jobs:
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.amrit1815 }}
-        password: ${{ secrets.3vE*88m)#$%L(rX }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD}}
 
     - name: Push Docker image to Docker Hub
       run: docker push ${{ secrets.amrit1815 }}/my-node-app:${{ github.sha }}
